@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    padding: 10px;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+        Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+
+}
+
+.navbar-nav li a {
+    letter-spacing: 1px;
+    margin-right: 20px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(192, 51, 51);
+    border-color: black;
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: solid;
+}
+
+.navbar-brand {
+    font-family: cursive;
+}
+
+/*popoup*/
+.popupclose {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    background: none;
+}
+
+.popup {
+    display: none;
+
+}
+
+.form-row {
+    margin: 13px;
+}
+
+.card {
+    box-shadow: 0px 10px 20px 2px rgba(201, 190, 190, 0.414);
+}
+
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-mobile-height {
+    height: 700px;
+    width: 20%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .card-mobile-height {
+        height: auto;
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .card-mobile-height {
+        width: 90vw;
+        height: 80vh;
+    }
+
+    .card {
+        height: 70vh;
+        overflow-y: scroll;
+    }
+
+    .card-body {}
+}
